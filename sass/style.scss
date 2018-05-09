@@ -94,7 +94,6 @@ body {
 .start {
 	width: 100%;
 	min-height: 544px;
-	border: 1px solid red;
 }
 
 .start__container {
@@ -137,13 +136,11 @@ body {
 
 .gallery__row {
 	display: flex;
-	border: 1px solid green;
 }
 
 .gallery__cell {
 	width: 400px;
 	height: 278px;
-	border: 1px solid orange;
 	padding: 0 44px;
 	display: flex;
 	flex-direction: column;
@@ -642,6 +639,17 @@ body {
 		display: none;
 	}
 
+	/* Section start */ 
+
+	.start__container {
+		flex-wrap: wrap
+	}
+
+	.start__column {
+    	width: 100%;
+    	min-height: 125px;
+	}
+
 
 }
 
@@ -670,6 +678,12 @@ body {
 	.logo {
 	    top: 41px;
 	    left: 20px;
+	}
+
+	/* Section start */ 
+
+	.start__container {
+		padding: 20px 5px;
 	}
 }
 
