@@ -20,12 +20,11 @@ body {
 	width: 100%;
 	height: 100%;
 	max-width: 1230px;
-	border: 1px solid red;
 	margin: 0 auto;
 	padding: 30px;
 }
 
-/* Home */
+/* Hero */
 
 .hero{
 	background-image: url('../images/hero.jpg');
@@ -616,6 +615,12 @@ body {
 /* Large devices (desktops, 992px and less than 1200px) */
 @media (max-width: 1200px) {
 
+	/* Hero */
+
+	.hero{
+		background-position: right bottom;
+	}
+
 }
 
 /* Hover */ 
@@ -626,9 +631,47 @@ body {
 /* Medium devices (tablets, 768px and less than 992) */
 @media (max-width: 991.98px) {
 
+	/* Hero */
+
+	.hero{
+		background-position: center bottom;
+	}
+
+
+	.hero__image {
+		display: none;
+	}
+
 
 }
 
+/* Small devices (landscape phones, 576px and less than 768) */
+@media (max-width: 768px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+
+	/* Hero */
+	
+	.hero__title {
+		font-size: 45px;
+	}
+
+	.article {
+		width: 300px;
+	}
+
+	.container {
+		padding: 20px;
+	}
+
+	.logo {
+	    top: 41px;
+	    left: 20px;
+	}
+}
 
 
 
