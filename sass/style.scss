@@ -253,12 +253,12 @@ body {
 
 .more {
 	width: 100%;
-	height: 526px;
+	min-height: 526px;
 }
 
 .more__container {
 	width: 100%;
-	height: 526px;
+	min-height: 526px;
 	padding-left: 15px;
 	padding-right: 15px;
 	display: flex;
@@ -690,6 +690,26 @@ body {
     	min-height: 125px;
 	}
 
+	/* Section more */ 
+
+	.more__row {
+		flex-wrap: wrap;
+	}
+
+	.more__cell {
+    	width: 46%;
+    	margin: 15px;
+	}
+
+}
+
+@media (max-width: 798px) {
+
+	/* Section more */ 
+
+	.more__cell {
+    	width: 100%;
+	}
 
 }
 
