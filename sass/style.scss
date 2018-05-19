@@ -658,6 +658,13 @@ body {
 		order: 3;
 	}
 
+	/* Section go */ 
+
+	.go__cell {
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+
 }
 
 /* Hover */ 
@@ -699,6 +706,38 @@ body {
 	.more__cell {
     	width: 46%;
     	margin: 15px;
+	}
+
+	/* Section go */ 
+
+	.go__sign {
+		margin-bottom: 20px;
+	}
+
+	.go__title {
+	    margin-bottom: 20px;
+	}
+
+	.go__article {
+	    margin-bottom: 20px;
+	}
+
+	.go__button {
+		margin-bottom: 14px;
+	}
+
+}
+
+@media (max-width: 850px) {
+	
+	/* Section go */ 
+
+	.go__container {
+		flex-wrap: wrap;
+	}
+
+	.go {
+		height: 835px;
 	}
 
 }
@@ -797,7 +836,29 @@ body {
     	height: 740px;
 	}
 
+	/* Section go */ 
+
+	.go__cell {
+		margin: 0;
+	}
+
+	.go {
+    	height: 805px;
+	}
 	
+}
+
+@media (max-width: 450px) {
+	
+	/* Section go */
+
+	.go__cell {
+		height: 420px;
+	}
+
+	.go {
+	    height: 880px;
+	}
 }
 
 @media (max-width: 400px) {
@@ -830,6 +891,16 @@ body {
 
 	.reasons {
     	height: 860px;
+	}
+
+	/* Section go */
+
+	.go__cell {
+		height: 460px;
+	}
+
+	.go {
+	    height: 960px;
 	}
 }
 
