@@ -178,11 +178,6 @@ body {
 	transition: background-image 0.5s linear;
 }
 
-.gallery__cell--clients:hover {
-	background-image: url('../images/clienthover.jpg');
-	background-size: cover;
-}
-
 .gallery__cell--great {
 	background-color: #bd8cbf;
 }
@@ -193,11 +188,6 @@ body {
 	background-position: center bottom;
 	background-size: cover;
 	transition: background-image 0.5s linear;
-}
-
-.gallery__cell--sign:hover {
-	background-size: cover;
-	background-image: url('../images/signhover.jpg');
 }
 
 .gallery__cell--perfect {
@@ -228,10 +218,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	transition: color 0.3s linear;
-}
-
-.cell__link:hover {
-	color: #184b4f;
 }
 
 .clear {
@@ -419,11 +405,6 @@ body {
 	padding-right: 97px;
 }
 
-.go__cell:hover {
-	background-color: #ffffff;
-	box-shadow: -1px 0px 80px 15px rgba(234,235,238,1);
-}
-
 .go__sign {
 	font-size: 11px;
 	color: #ffffff;
@@ -435,10 +416,6 @@ body {
 	font-weight: 800;
 	margin-bottom: 24px;
 	width: 78px;
-}
-
-.go__cell:hover .go__sign {
-	background-color: #bd8cbf;
 }
 
 .go__sign--most {
@@ -478,20 +455,12 @@ body {
 	transition: background-color 0.3s linear;
 }
 
-.go__button:hover {
-	background-color: #184b4f;
-}
-
 .go__link { 
 	font-size: 22px;
 	color: #c5c5c5;
 	margin-right: 10px;
 	margin-left: 2px;
 	transition: color 0.3s linear;
-}
-
-.go__link:hover {
-	color: #184b4f;
 }
 
 .go__link--mac {
@@ -578,10 +547,6 @@ body {
 	outline: none;
 }
 
-.footer__btn:hover {
-	background-color: #184b4f;
-}
-
 .footer__text {
 	font-size: 12px;
 	line-height: 18px;
@@ -605,10 +570,6 @@ body {
 	color: #ffffff;
 	margin-bottom: 10px;
 	transition: color 0.3s linear;
-}
-
-.footer__link:hover {
-	color: #57697f;
 }
 
 @media (max-width: 1246px) {
@@ -691,6 +652,51 @@ body {
 /* Hover */ 
 @media (min-width: 992px) {
 
+	/* Section gallery */ 
+
+	.gallery__cell--clients:hover {
+		background-image: url('../images/clienthover.jpg');
+		background-size: cover;
+	}
+
+	.gallery__cell--sign:hover {
+		background-size: cover;
+		background-image: url('../images/signhover.jpg');
+	}
+
+	.cell__link:hover {
+		color: #184b4f;
+	}
+
+	/* Section go */ 
+
+	.go__cell:hover {
+		background-color: #ffffff;
+		box-shadow: -1px 0px 80px 15px rgba(234,235,238,1);
+	}
+
+	.go__cell:hover .go__sign {
+		background-color: #bd8cbf;
+	}
+
+	.go__button:hover {
+		background-color: #184b4f;
+	}
+
+	.go__link:hover {
+		color: #184b4f;
+	}
+
+	/* Footer */ 
+
+	.footer__btn:hover {
+		background-color: #184b4f;
+	}
+
+	.footer__link:hover {
+		color: #57697f;
+	}
+
 }
 
 /* Medium devices (tablets, 768px and less than 992) */
@@ -716,6 +722,13 @@ body {
 	.start__column {
     	width: 100%;
     	min-height: 125px;
+	}
+
+	/* Section gallery */
+		/* Focus */
+
+	.cell__link:focus {
+		color: #184b4f;
 	}
 
 	/* Section more */ 
@@ -747,6 +760,16 @@ body {
 		margin-bottom: 14px;
 	}
 
+		/* Focus */
+
+	.go__button:focus {
+		background-color: #184b4f;
+	}
+
+	.go__link:focus {
+		color: #184b4f;
+	}
+
 	/* Footer */ 
 
 	.footer__row--first {
@@ -772,6 +795,16 @@ body {
 
 	.footer__text {
 		margin-bottom: 50px;
+	}
+
+		/* Focus */ 
+
+	.footer__btn:focus {
+		background-color: #184b4f;
+	}
+
+	.footer__link:focus {
+		color: #57697f;
 	}
 
 }
