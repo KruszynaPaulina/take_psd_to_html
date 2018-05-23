@@ -515,12 +515,10 @@ body {
 }
 
 .footer__row {
-	border: 1px solid green;
 	display: flex;
 }
 
 .footer__cell {
-	border: 1px solid orange;
 	margin: 0 15px;
 }
 
@@ -590,7 +588,7 @@ body {
 	color: #57697f;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	width: 336px;
+	max-width: 336px;
 }
 
 .footer__box {
@@ -942,6 +940,14 @@ body {
 
 	.footer {
 		height: 948px;
+	}
+
+	.footer__email {
+	    width: 78%;
+	}
+
+	.footer__btn {
+	    width: 22%;
 	}
 }
 

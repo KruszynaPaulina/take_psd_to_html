@@ -515,12 +515,10 @@ body {
       justify-content: center; }
 
 .footer__row {
-  border: 1px solid green;
   display: -ms-flexbox;
   display: flex; }
 
 .footer__cell {
-  border: 1px solid orange;
   margin: 0 15px; }
 
 .footer__cell--first {
@@ -580,7 +578,7 @@ body {
   color: #57697f;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  width: 336px; }
+  max-width: 336px; }
 
 .footer__box {
   width: 170px;
@@ -821,7 +819,13 @@ body {
     min-height: 400px; }
 
   .footer {
-    height: 948px; } }
+    height: 948px; }
+
+  .footer__email {
+    width: 78%; }
+
+  .footer__btn {
+    width: 22%; } }
 @media (max-width: 400px) {
   .cell__title {
     font-size: 25px; }
