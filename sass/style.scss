@@ -8,12 +8,7 @@
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
-}
-
-body {
-	overflow-y: scroll;
+	height: 100%;
 }
 
 .container {
@@ -89,6 +84,26 @@ body {
 	bottom: -206px;
 }
 
+/* Button To Top */ 
+
+.btnToTop {
+	background-color: #82ca9c;
+	color: #ffffff;
+	font-size: 30px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 10;
+	border: none;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	transition: background-color 0.3s linear;
+	&:focus {
+		outline: none;
+	}
+}
+
 /* Section start */ 
 
 .start {
@@ -132,6 +147,7 @@ body {
 .gallery {
 	width: 100%;
 	min-height: 556px;
+	overflow-x: hidden;
 }
 
 .gallery__row {
@@ -453,6 +469,10 @@ body {
 	margin-bottom: 18px;
 	cursor: pointer;
 	transition: background-color 0.3s linear;
+	
+	&:focus {
+		outline: none;
+	}
 }
 
 .go__link { 
@@ -652,6 +672,16 @@ body {
 /* Hover */ 
 @media (min-width: 992px) {
 
+	/* Button To Top */ 
+
+	.btnToTop:hover {
+		background-color: #184b4f;
+	}
+
+	.btnToTop:focus {
+		background-color: #184b4f;
+	}
+
 	/* Section gallery */ 
 
 	.gallery__cell--clients:hover {
@@ -706,11 +736,16 @@ body {
 
 	.hero{
 		background-position: center bottom;
-	}
-
+	}	
 
 	.hero__image {
 		display: none;
+	}
+
+	/* Button To Top */ 
+
+	.btnToTop:focus {
+		background-color: #184b4f;
 	}
 
 	/* Section start */ 
@@ -888,6 +923,13 @@ body {
 	.logo {
 	    top: 41px;
 	    left: 20px;
+	}
+
+	/* Button To Top */ 
+
+	.btnToTop {
+	    bottom: 20px;
+	    right: 20px;
 	}
 
 	/* Section start */ 
